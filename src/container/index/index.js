@@ -65,7 +65,9 @@ class Header {
   static #isOpen = false
 
   static init = () => {
-    this.#height = document.querySelector('.header-buttom')
+    this.#height = document.querySelector(
+      '.header-bottom',
+    ).offsetHeight
     this.#wrapper = document.querySelector(
       '.header-wrapper',
     )
